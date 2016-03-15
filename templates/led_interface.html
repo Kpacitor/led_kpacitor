@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+{% block content %}
+
+	<div>
+		<h1>Kpacitor Projeto CONTROLE DOS LEDS</h1>
+	</div>
+
+	<a href = "{{url_for('comando_kpacitorpi', cod_movimentar = 1)}}">
+		<div>
+			<h3>LED 1</h3>
+		</div>
+	</a>
+
+	<a href = "{{url_for('comando_kpacitorpi', cod_movimentar = 2)}}">
+		<div>
+			<h3>LED 2</h3>
+		</div>
+	</a>
+
+	<a href = "{{url_for('comando_kpacitorpi', cod_movimentar = 3)}}">
+		<div>
+			<h3>LED 3</h3>
+		</div>
+	</a>
+
+	<a href = "{{url_for('comando_kpacitorpi', cod_movimentar = 4)}}">
+		<div>
+			<h3>LED 4</h3>
+		</div>
+	</a>
+
+{% endblock %}
